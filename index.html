@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            position:relative;
+            background-color:orange;
+        }
+        .balon{
+            position: absolute;
+            width:100px;
+            margin-left:900px;
+            margin-top:450px;
+            animation-name: balon;
+            animation-duration:5s;
+            animation-iteration-count: 1;
+            transition: all 0.5 ease;
+        }
+        .cesta{
+            position: absolute;
+            width:400px;
+            margin-left:800px;
+            margin-top:50px;
+        }
+        @keyframes balon {
+            0% {
+              transform: translate(-800px, -500px) scale(1.1, 0.8);
+            }
+            50%{
+                transform: translate(-400px, -80px);
+            }
+            90%{
+                transform: translate(0px, -400px);
+            }
+          }
+    </style>
+</head>
+<body>
+   <img class="balon" src="img/balon-baloncesto-wilson-evo-nxt-game-feb-talla-6.png">
+   <img class="cesta" src="img/cesta1.png">
+
+</body>
+</html>
